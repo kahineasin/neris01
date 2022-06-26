@@ -12,11 +12,11 @@ while not success:
 	line = git_pull_result.readlines()
 	for every_line in line:
 		print(every_line)
+		if every_line.find(success_return, 0, len(every_line))>-1 :
+			success=True
 	first_line_result = line[0]
 	# print("first_line_result is:", first_line_result)
-	if first_line_result == success_return:
-		success = True
-	else:
+	if success == False:
 		i += 1
 	git_pull_result.close()
  
