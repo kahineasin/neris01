@@ -1,0 +1,20 @@
+generator/sf2/*
+generator/ruby/soundfont*
+**/source*
+**/build*
+*/soundfont/*
+!examples/soundfont/acoustic_grand_piano*
+!examples/soundfont/synth_drum*
+oggenc
+oggdec
+git_pull_result.txt
+
+# NODE/NPM
+node_modules*
+npm-debug.log
+
+# FORMATS
+*.gz
+*.DS_Store
+
+
